@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+.webpack
+.DS_Store
+dist
+lib
+private
+coverage
+.generated.graphql
+.generated.apollo.graphql
+jest.config.personal.js

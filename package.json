@@ -1,0 +1,64 @@
+{
+  "name": "@dathuis/mjml-loader",
+  "version": "4.6.2",
+  "description": "Webpack mjml-loader",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "jest": "jest",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:eslint": "eslint src --ext .ts,.js",
+    "lint:ts": "npm run type-check"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "npm run lint && npm test",
+      "post-checkout": "npm install"
+    }
+  },
+  "author": "Philipp Beau <Philipp@dathuis.nl>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.7.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.7.5",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
+    "@types/jest": "^25.2.1",
+    "@types/mjml": "^4.0.4",
+    "@types/node": "^13.1.4",
+    "@types/webpack": "^4.41.1",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.2.6",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jest": "^23.3.0",
+    "husky": "^4.2.3",
+    "jest": "^25.2.7",
+    "jest-circus": "^25.2.7",
+    "jest-cli": "^25.2.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1",
+    "ts-babel-node": "^1.1.1",
+    "ts-jest": "^25.3.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4",
+    "utility-types": "^3.10.0"
+  },
+  "dependencies": {
+    "mjml": "^4.6.2"
+  }
+}

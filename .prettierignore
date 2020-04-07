@@ -1,0 +1,4 @@
+package.json
+npm-shrinkwrap.json
+package-lock.json
+coverage
