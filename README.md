@@ -1,7 +1,5 @@
 # Webpack mjml-loader
 
-_The version of this package tries to follow the version of mjml used._
-
 ```
 npm install --save @dathuis/mjml-loader
 ```

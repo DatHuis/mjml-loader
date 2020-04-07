@@ -1,6 +1,6 @@
 {
   "name": "@dathuis/mjml-loader",
-  "version": "4.6.2",
+  "version": "4.6.3",
   "description": "Webpack mjml-loader",
   "main": "lib/index.js",
   "files": [
@@ -56,9 +56,10 @@
     "ts-jest": "^25.3.1",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4",
-    "utility-types": "^3.10.0"
-  },
-  "dependencies": {
+    "utility-types": "^3.10.0",
     "mjml": "^4.6.2"
+  },
+  "peerDependency": {
+    "mjml": "^4.0.0"
   }
 }
