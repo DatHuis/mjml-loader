@@ -1,10 +1,18 @@
 {
   "name": "@dathuis/mjml-loader",
-  "version": "4.6.3",
+  "version": "4.6.4",
   "description": "Webpack mjml-loader",
   "main": "lib/index.js",
   "files": [
     "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DatHuis/mjml-loader.git"
+  },
+  "keywords": [
+    "mjml",
+    "webpack"
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -24,7 +32,7 @@
     }
   },
   "author": "Philipp Beau <Philipp@dathuis.nl>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
